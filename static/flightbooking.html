@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0060)http://rn53themes.net/themes/demo/travelz/db-my-profile.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Flight Booking</title>
+    <!--== META TAGS ==-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="http://rn53themes.net/themes/demo/travelz/images/fav.ico">
+    <!-- GOOGLE FONTS -->
+    <link href={% static 'profile_files/css' %} rel="stylesheet">
+    <!-- FONT-AWESOME ICON CSS -->
+    <link rel="stylesheet" href={% static 'profile_files/font-awesome.min.css' %}>
+    <!--== ALL CSS FILES ==-->
+    <link rel="stylesheet" href={% static 'profile_files/style.css' %}>
+    <link rel="stylesheet" href={% static 'profile_files/materialize.css' %}>
+    <link rel="stylesheet" href={% static 'profile_files/bootstrap.css' %}>
+    <link rel="stylesheet" href={% static 'profile_files/mob.css' %}>
+    <link rel="stylesheet" href={% static 'profile_files/animate.css' %}>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body style="overflow: visible;">
+    <!-- Preloader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">&nbsp;</div>
+    </div>
+
+    
+    <!--HEADER SECTION-->
+    <section>
+        <!-- TOP BAR -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <
+                        <div class="ed-com-t1-right">
+                            <ul>
+                               <li><a href="./signin.html">Sign In</a>
+                                </li>
+                                <li><a href="./signup.html">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGO AND MENU SECTION -->
+        <div class="top-logo affix-top" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wed-logo">
+                           <a href="./home.html"><img src={% static 'The Travel - Tour Travel_files/logo.png' %} alt="">
+						</a>
+                        </div>
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="./home.html">Home</a>
+                                </li>
+                                <li><a href="./profile.html">Profile</a>
+                                </li>
+                                <li><a href="./contactus.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END HEADER SECTION-->
+	
+	<!--DASHBOARD-->
+	<section>
+		<div class="db">
+			<!--LEFT SECTION-->
+			<div class="db-l">
+				<div class="db-l-1">
+					<ul>
+						<li><img src={% static './profile_files/db-profile.jpg' %} alt="">
+						</li>
+						
+					</ul>
+				</div>
+				<div class="db-l-2">
+					<ul>
+						<li>
+							<a href="./profile.html"><img src={% static 'profile_files/dbl6.png' %} alt=""> My Profile</a>
+						</li>
+						<li>
+							<a href="./travelbooking.html"><img src={% static 'profile_files/dbl2.png' %} alt=""> Travel Bookings</a>
+						</li>
+						<li>
+							<a href="./hotelbooking.html"><img src={% static 'profile_files/dbl3.png' %} alt=""> Hotel Bookings</a>
+						</li>
+						<li>
+							<a href="./flightbooking.html"><img src={% static 'profile_files/dbl4.png' %} alt=""> Flight Bookings</a>
+						</li>
+						
+						<li>
+							<a href="./payment.html"><img src={% static 'profile_files/dbl9.png' %} alt=""> Payments</a>
+						</li>
+						<li>
+							<a href="./cliamandrefund.html"><img src={% static 'profile_files/dbl7.png' %} alt=""> Claim &amp; Refund</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--CENTER SECTION-->
+			<div class="db-2">
+				<div class="db-2-com db-2-main">
+					<h4>Flight Booking</h4>
+					<div class="db-2-main-com db-2-main-com-table">
+						<table class="responsive-table">
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>Package</th>
+									<th>Duration</th>
+									<th>Start Date</th>
+									<th>Price</th>
+									<th>Payment</th>
+									<th>More</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Honeymoon Tailand</td>
+									<td>6days/5nights</td>
+									<td>12 Aug 2017</td>
+									<td>$784</td>
+									<td><span class="db-done">Done</span>
+									</td>
+									<td><a href="db-travel-details.html" class="db-done">view more</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Europe</td>
+									<td>10days/9nights</td>
+									<td>09 Nov 2017</td>
+									<td>$1058</td>
+									<td><span class="db-not-done">Done</span>
+									</td>
+									<td><a href="db-travel-details.html" class="db-done">view more</a>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Dubai</td>
+									<td>7days/6nights</td>
+									<td>24 Dec 2017</td>
+									<td>$862</td>
+									<td><span class="db-not-done">Done</span>
+									</td>
+									<td><a href="db-travel-details.html" class="db-done">view more</a>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Thailand</td>
+									<td>8days/7nights</td>
+									<td>24 Jan 2018</td>
+									<td>$2355</td>
+									<td><span class="db-not-done">Done</span>
+									</td>
+									<td><a href="db-travel-details.html" class="db-done">view more</a>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Australia</td>
+									<td>8days/7nights</td>
+									<td>02 Mar 2018</td>
+									<td>$1542</td>
+									<td><span class="db-not-done">Done</span>
+									</td>
+									<td><a href="db-travel-details.html" class="db-done">view more</a>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Singapore</td>
+									<td>12days/11nights</td>
+									<td>21 Apr 2018</td>
+									<td>$2142</td>
+									<td><span class="db-not-done">Done</span>
+									</td>
+									<td><a href="db-travel-details.html" class="db-done">view more</a>
+									</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>South Africa</td>
+									<td>14days/13nights</td>
+									<td>08 Jun 2018</td>
+									<td>$2350</td>
+									<td><span class="db-not-done">Done</span>
+									</td>
+									<td><a href="db-travel-details.html" class="db-done">view more</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+	</section>
+	<!--END DASHBOARD-->
+	
+	<!--====== FOOTER 2 ==========-->
+	<section>
+		<div class="rows">
+			<div class="footer">
+				<div class="container">
+					<div class="foot-sec2">
+						<div>
+							<div class="row">
+								<div class="col-sm-3 foot-spec foot-com">
+									<h4><span>Holiday</span> Tour &amp; Travels</h4>
+									<p>World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+								</div>
+								<div class="col-sm-3 foot-spec foot-com">
+									<h4><span>Address</span> &amp; Contact Info</h4>
+									<p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
+									<p> <span class="strong">Phone: </span> <span class="highlighted">+101-1231-1231</span> </p>
+								</div>
+								<div class="col-sm-3 col-md-3 foot-spec foot-com">
+									<h4><span>SUPPORT</span> &amp; HELP</h4>
+									<ul class="two-columns">
+										<li> <a href="/login/aboutus/">About Us</a> </li>
+										<li> <a href="/login/faq/">FAQ</a> </li>
+										<li> <a href="/login/faq/">Feedbacks</a> </li>
+										<li> <a href="/login/blog/">Blog </a> </li>
+										<li> <a href="/login/signin/">Use Cases</a> </li>
+										<li> <a href="/login/signin/">Advertise us</a> </li>
+										<li> <a href="/login/discount/">Discount</a> </li>
+										<li> <a href="/login/discount/">Vacations</a> </li>
+										<li> <a href="/login/discount/">Branding Offers </a> </li>
+										<li> <a href="/login/contactus/">Contact Us</a> </li>
+									</ul>
+								</div>
+								<div class="col-sm-3 foot-social foot-spec foot-com">
+									<h4><span>Follow</span> with us</h4>
+									<p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
+									<ul>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--====== FOOTER - COPYRIGHT ==========-->
+	<section>
+		<div class="rows copy">
+			<div class="container">
+				<p>Copyrights © 2017 Company Name. All Rights Reserved</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="icon-float">
+			<ul>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#" class="sh">1k <br> Share</a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#" class="gp1"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#" class="li1"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-my-profile.html#" class="sh1"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </li>
+			</ul>
+		</div>
+	</section>
+	<!--========= Scripts ===========-->
+	<script src={% static 'profile_files/jquery-latest.min.js.download' %}></script>
+	<script src={% static 'profile_files/bootstrap.js.download' %}></script>
+	<script src={% static 'profile_files/wow.min.js.download' %}></script>
+	<script src={% static 'profile_files/materialize.min.js.download' %}></script>
+	<script src={% static 'profile_files/custom.js.download' %}></script>
+
+
+<div class="hiddendiv common"></div></body></html>

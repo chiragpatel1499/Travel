@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0057)http://rn53themes.net/themes/demo/travelz/db-payment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Make Payment</title>
+    <!--== META TAGS ==-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="http://rn53themes.net/themes/demo/travelz/images/fav.ico">
+    <!-- GOOGLE FONTS -->
+    <link href={% static 'makepayment_files/css' %} rel="stylesheet">
+    <!-- FONT-AWESOME ICON CSS -->
+    <link rel="stylesheet" href={% static 'makepayment_files/font-awesome.min.css' %}>
+    <!--== ALL CSS FILES ==-->
+    <link rel="stylesheet" href={% static 'makepayment_files/style.css' %}>
+    <link rel="stylesheet" href={% static 'makepayment_files/materialize.css' %}>
+    <link rel="stylesheet" href={% static 'makepayment_files/bootstrap.css' %}>
+    <link rel="stylesheet" href={% static 'makepayment_files/mob.css' %}>
+    <link rel="stylesheet" href={% static 'makepayment_files/animate.css' %}>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body style="overflow: visible;">
+    <!-- Preloader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">&nbsp;</div>
+    </div>
+
+
+    <!--HEADER SECTION-->
+    <section>
+        <!-- TOP BAR -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div class="ed-com-t1-right">
+                            <ul>
+                               <li><a href="/login/logout/">Log Out</a>
+                                </li>  
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!-- LOGO AND MENU SECTION -->
+        <div class="top-logo affix-top" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wed-logo">
+                            <a href="./home.html"><img src={% static 'The Travel - Tour Travel_files/logo.png' %} alt="">
+						</a>
+                        </div>
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="./home.html">Home</a>
+                                </li>
+                                <li><a href="./profile.html">Profile</a>
+                                </li>
+                                <li><a href="./contactus.html">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+    </section>
+    <!--END HEADER SECTION-->
+	
+	<!--DASHBOARD-->
+	<section>
+		<div class="db">
+			<!--LEFT SECTION-->
+			<div class="db-l">
+				
+				<div class="db-l-2">
+					<ul>
+						<li>
+							<a href="/login/profile/"><img src={% static 'profile_files/dbl6.png' %} alt=""> My Profile</a>
+						</li>
+						<li>
+							<a href="/login/travelbooking/"><img src={% static 'profile_files/dbl2.png' %} alt=""> Travel Bookings</a>
+						</li>
+						<li>
+							<a href="/login/hotelbooking/"><img src={% static 'profile_files/dbl3.png' %} alt=""> Hotel Bookings</a>
+						</li>
+						<li>
+							<a href="/login/flightbooking/"><img src={% static 'profile_files/dbl4.png' %} alt=""> Flight Bookings</a>
+						</li>
+						
+						<li>
+							<a href="/login/payment/"><img src={% static 'profile_files/dbl9.png' %} alt=""> Payments</a>
+						</li>
+						<li>
+							<a href="/login/cliamandrefund/"><img src={% static 'profile_files/dbl7.png' %} alt=""> Claim &amp; Refund</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--CENTER SECTION-->
+			<div class="db-2">
+				<div class="db-2-com db-2-main">
+					<h4>Enter Payment Details <span class="db-pay-amount">Total: $1200</span></h4>
+					<div class="db-2-main-com db2-form-pay db2-form-com">
+						<div class="db-pay-card">
+							<h5>Accepted Card Types</h5><img src="./makepayment_files/cards.png" alt=""> </div>
+						<form action="/login/makepaymentstore/"class="col s12">
+							<div class="row">
+								<div class="input-field col s12">
+									<input type="number" name="payment_amount" class="validate">
+									<label>Enter amount</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<div class="select-wrapper"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-4e0d95d2-57e8-97f1-ad63-cba21116084a" value="Select Card Type"><ul id="select-options-4e0d95d2-57e8-97f1-ad63-cba21116084a" class="dropdown-content select-dropdown "><li class="disabled "><span>Select Card Type</li></ul>
+									<select name="payment_card_type"class="initialized">
+										<option value="" disabled="" selected="">Select Card Type</option>
+										<option value="Master Card">Master Card</option>
+										<option value="Visa">Visa</option>
+										<option value="American Express">American Express</option>
+										<option value="Laser">Laser</option>
+										<option value="Discover">Discover</option>
+									</select></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input type="number" class="validate">
+									<label>Card Number</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12 m6">
+									<input type="number" name="payment_expairy_date" class="validate">
+									<label>Expairy Date (DD/MM)</label>
+								</div>
+								<div class="input-field col s12 m6">
+									<input type="number" name="payment_cvv" class="validate">
+									<label>CVV</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input id="pay-ca" type="text" name="payment_full_name_on_a_card" class="validate">
+									<label for="pay-ca">Full name on a Card</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="waves-effect waves-light full-btn waves-input-wrapper" style=""><input type="submit" value="SUBMIT" class="waves-button-input"></i> </div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--RIGHT SECTION-->
+	</section>		
+	<!--END DASHBOARD-->
+	
+	<!--====== FOOTER 2 ==========-->
+	<section>
+		<div class="rows">
+			<div class="footer">
+				<div class="container">
+					<div class="foot-sec2">
+						<div>
+							<div class="row">
+								<div class="col-sm-3 foot-spec foot-com">
+									<h4><span>Holiday</span> Tour &amp; Travels</h4>
+									<p>World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+								</div>
+								<div class="col-sm-3 foot-spec foot-com">
+									<h4><span>Address</span> &amp; Contact Info</h4>
+									<p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
+									<p> <span class="strong">Phone: </span> <span class="highlighted">+101-1231-1231</span> </p>
+								</div>
+								<div class="col-sm-3 col-md-3 foot-spec foot-com">
+									<h4><span>SUPPORT</span> &amp; HELP</h4>
+									<ul class="two-columns">
+										<li> <a href="/login/aboutus/">About Us</a> </li>
+										<li> <a href="/login/faq/">FAQ</a> </li>
+										<li> <a href="/login/faq/">Feedbacks</a> </li>
+										<li> <a href="/login/blog/">Blog </a> </li>
+										<li> <a href="/login/signin/">Use Cases</a> </li>
+										<li> <a href="/login/signin/">Advertise us</a> </li>
+										<li> <a href="/login/discount/">Discount</a> </li>
+										<li> <a href="/login/discount/">Vacations</a> </li>
+										<li> <a href="/login/discount/">Branding Offers </a> </li>
+										<li> <a href="/login/contactus/">Contact Us</a> </li>
+									</ul>
+								</div>
+								<div class="col-sm-3 foot-social foot-spec foot-com">
+									<h4><span>Follow</span> with us</h4>
+									<p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
+									<ul>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--====== FOOTER - COPYRIGHT ==========-->
+	<section>
+		<div class="rows copy">
+			<div class="container">
+				<p>Copyrights © 2017 Company Name. All Rights Reserved</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="icon-float">
+			<ul>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#" class="sh">1k <br> Share</a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#" class="gp1"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#" class="li1"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/db-payment.html#" class="sh1"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </li>
+			</ul>
+		</div>
+	</section>
+	<!--========= Scripts ===========-->
+	<script src={% static 'makepayment_files/jquery-latest.min.js.download' %}></script>
+	<script src={% static 'makepayment_files/bootstrap.js.download' %}></script>
+	<script src={% static 'makepayment_files/wow.min.js.download' %}></script>
+	<script src={% static 'makepayment_files/materialize.min.js.download' %}></script>
+	<script src={% static 'makepayment_files/custom.js.download' %}></script>
+
+
+<div class="hiddendiv common"></div></body></html>

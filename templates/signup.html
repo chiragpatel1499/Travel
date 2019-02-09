@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0055)http://rn53themes.net/themes/demo/travelz/register.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sign Up</title>
+    <!--== META TAGS ==-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="http://rn53themes.net/themes/demo/travelz/images/fav.ico">
+    <!-- GOOGLE FONTS -->
+    <link href={% static 'The Travel - Tour Travel_files/css' %} rel="stylesheet">
+    <!-- FONT-AWESOME ICON CSS -->
+    <link rel="stylesheet" href={% static 'The Travel - Tour Travel_files/font-awesome.min.css' %}>
+    <!--== ALL CSS FILES ==-->
+    <link rel="stylesheet" href={% static 'The Travel - Tour Travel_files/style.css' %}>
+    <link rel="stylesheet" href={% static 'The Travel - Tour Travel_files/materialize.css' %}>
+    <link rel="stylesheet" href={% static 'The Travel - Tour Travel_files/bootstrap.css' %}>
+    <link rel="stylesheet" href={% static 'The Travel - Tour Travel_files/mob.css' %}>
+    <link rel="stylesheet" href={% static 'The Travel - Tour Travel_files/animate.css' %}>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body style="overflow: visible;">
+    <!-- Preloader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">&nbsp;</div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <section>
+        <div class="ed-mob-menu">
+            <div class="ed-mob-menu-con">
+                <div class="ed-mm-left">
+                    <div class="wed-logo">
+                        <a href="/login/home/"><img src={% static 'The Travel - Tour Travel_files/logo.png' %} alt="">
+						</a>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </section>
+    <!--HEADER SECTION-->
+    <section>
+        <!-- TOP BAR -->
+         <!-- TOP BAR -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div class="ed-com-t1-right">
+                            <ul>
+                                <li><a href="/login/signin/">Sign In</a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGO AND MENU SECTION -->
+        <div class="top-logo affix-top" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wed-logo">
+                            <a href="/login/home/"><img src={% static 'The Travel - Tour Travel_files/logo.png' %} alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+	<section>
+		<div class="tr-register">
+			<div class="tr-regi-form">
+				<h4>Create an Account</h4>
+				
+				<p>It's free and always will be.</p>
+				<form action="/login/storedata/" method="POST" class="col s12"> {% csrf_token %}
+					<div class="row">
+						<div class="input-field col  s12">
+							<input type="text" name="username" class="validate">
+							<label>User Name </label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col  s12">
+							<input type="text"  name="name" class="validate">
+							<label>First Name</label>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="number" name="phone" class="validate">
+							<label class="">Mobile</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="date" name="date" class="validate">
+							<label class=""></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="email" name="email" class="validate">
+							<label>Email</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="password"  name="password1" class="validate">
+							<label>Password</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input type="password" name="password2" class="validate">
+							<label>Confirm Password</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<i class="waves-effect waves-light btn-large full-btn waves-input-wrapper" style="">
+							<input type="submit" value="submit" class="waves-button-input"></i> </div>
+					</div>
+				</form>
+				<p>Are you a already member ? <a href="/login/signin/">Click to Login</a>
+				</p>
+			</div>
+		</div>
+	</section>
+	<!--END DASHBOARD-->
+	<!--====== TIPS BEFORE TRAVEL ==========-->
+	
+	<!--====== FOOTER 1 ==========-->
+	<section>
+		<div class="rows">
+			<div class="footer1 home_title tb-space">
+				
+			</div>
+		</div>
+	</section>
+	<!--====== FOOTER 2 ==========-->
+	<section>
+		<div class="rows">
+			<div class="footer">
+				<div class="container">
+					<div class="foot-sec2">
+						<div>
+							<div class="row">
+								<div class="col-sm-3 foot-spec foot-com">
+									<h4><span>Holiday</span> Tour &amp; Travels</h4>
+									<p>World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
+								</div>
+								<div class="col-sm-3 foot-spec foot-com">
+									<h4><span>Address</span> &amp; Contact Info</h4>
+									<p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
+									<p> <span class="strong">Phone: </span> <span class="highlighted">+101-1231-1231</span> </p>
+								</div>
+								<div class="col-sm-3 col-md-3 foot-spec foot-com">
+									<h4><span>SUPPORT</span> &amp; HELP</h4>
+									<ul class="two-columns">
+										<li> <a href="/login/aboutus/">About Us</a> </li>
+										<li> <a href="/login/faq/">FAQ</a> </li>
+										<li> <a href="/login/faq/">Feedbacks</a> </li>
+										<li> <a href="/login/blog/">Blog </a> </li>
+										<li> <a href="/login/signin/">Use Cases</a> </li>
+										<li> <a href="/login/signin/">Advertise us</a> </li>
+										<li> <a href="/login/discount/">Discount</a> </li>
+										<li> <a href="/login/discount/">Vacations</a> </li>
+										<li> <a href="/login/discount/">Branding Offers </a> </li>
+										<li> <a href="/login/contactus/">Contact Us</a> </li>
+									</ul>
+								</div>
+								<div class="col-sm-3 foot-social foot-spec foot-com">
+									<h4><span>Follow</span> with us</h4>
+									<p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
+									<ul>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+										<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--====== FOOTER - COPYRIGHT ==========-->
+	<section>
+		<div class="rows copy">
+			<div class="container">
+				<p>Copyrights © 2017 Company Name. All Rights Reserved</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="icon-float">
+			<ul>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#" class="sh">1k <br> Share</a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#" class="gp1"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#" class="li1"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+				<li><a href="http://rn53themes.net/themes/demo/travelz/register.html#" class="sh1"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </li>
+			</ul>
+		</div>
+	</section>
+	<!--========= Scripts ===========-->
+	<script src={% static 'The Travel - Tour Travel_files/jquery-latest.min.js.download' %}></script>
+	<script src={% static 'The Travel - Tour Travel_files/bootstrap.js.download' %}></script>
+	<script src={% static 'The Travel - Tour Travel_files/wow.min.js.download' %}></script>
+	<script src={% static 'The Travel - Tour Travel_files/materialize.min.js.download' %}></script>
+	<script src={% static 'The Travel - Tour Travel_files/custom.js.download' %}></script>
+
+
+<div class="hiddendiv common"></div></body></html>

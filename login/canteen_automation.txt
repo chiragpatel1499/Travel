@@ -1,0 +1,41 @@
+<--Canteen Automation-->
+
+Module: 
+	1.Admin
+	2.User
+	
+/* both Admin and User login , registration and forgot password */
+
+<-----Admin Functionality----->
+
+1.Manage products
+	- add items.
+	- remove items.
+	- change items.
+	
+2.Manage order
+	- cancel order.
+	- 
+
+3.Manage user
+	- give discount.
+	- give notification about new item.
+	- give refund to user.
+	
+<-----User Functionality----->
+
+1.Make order
+	- give order.
+	- cancel order within 10 minite.
+
+2.Manage favourite item list
+	- add item to favourite item list.
+	- Remove item from favourite item list.
+
+2.Manage payment
+	- Online payment via bhim,paytm etc.
+	- Apply promocode and discount etc.
+
+3.feedback
+	- about service.
+	- Item quality and quntity.
